@@ -45,7 +45,7 @@ let jugar = 0;
 let gover = 0;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(400, 400);
 }
 
 function draw() {
@@ -193,6 +193,7 @@ function menuprincipal() {
     fill(0, 0, 0);
     text("JUGAR", 200, 246);
     text("AYUDA", 200, 297);
+    text("LEADERBOARD", 200, 348);
     fill(196, 196, 196);
     ellipse(200, 200, 40, 40);
     triangle(posXKat + 164, posYKat - 39, posXKat + 174, posYKat - 21, posXKat + 157, posYKat - 7);
