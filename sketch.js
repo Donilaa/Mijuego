@@ -66,98 +66,9 @@ function draw() {
   }
 
   if (jugar === 1) {
-    //FONDO
-    background(65, 164, 240);
+    jugar();
     
-    // PASTO
-    fill(32, 128, 35);
-    rect(0, 200, 400, 200);
-
-    //SOL
-    fill(255, 242, 0);
-    ellipse(270, 52, 24, 24);
-
-    //NUBES
-    fill(255, 255, 255);
-    ellipse(posXnube1, 66, 72, 24);
-    ellipse(posXnube2, 107, 72, 24);
-    
-    posXnube1 -= veloc1;
-    posXnube2 += veloc2;
-    
-    if (posXnube1 < -38 || posXnube1 > 438) {
-      veloc1 = -veloc1;
-    }
-    
-    if (posXnube2 > 438 || posXnube2 < -38) {
-      veloc2 = -veloc2;
-    }
-    
-    //MOVIMIENTO
-    if (keyIsPressed) {
-      if (key === 'd' || key === 'D') {
-        posXpers += 2;
-        if (posXpers + 20 >= 390) {
-          posXpers = 370;
-        }
-      }
-      
-      if (key === 'a' || key === 'A') {
-        posXpers -= 2;
-        if (posXpers - 20 <= 5) {
-          posXpers = 25;
-        }
-      }
-    }
-    casa();
-    arbol();
-    proyectiles();
-    cometa();
-    persona();
-    colpers();
-    
-    //CONTADOR DE PUNTOS
-    fill(0, 0, 0);
-    text(conteo, 18, 8);
-    fill(255, 255, 255);
-    text(conteo, 18, 10);
-
-    //BLOQUEO CON COMETA
-    bloqueosConCometa();
-
-    //MOVIMIENTO DE KAT
-    posXKat += KatSpeed1;
-    
-    if (posXKat + 23 > 390) {
-      KatSpeed1 = Math.random() * -2 - 1;
-    }
-    
-    if (posXKat - 45 < 10) {
-      KatSpeed1 = Math.random() * 2 + 1;
-    }
-
-    if (KatSpeed1 < 0) {
-      gato();
-    } else {
-      gatomirror();
-    }
-    
-    //COLISIONES
-    colcuerpo();
-    
-    if (KatSpeed1 > 0) {
-      colcabezamirror();
-    } else {
-      colcabeza();
-    }
-
-    persona();
-
-    if (KatSpeed1 === 0) {
-      gover = 1;
-    }
-  }
-}
+  } 
 
 // Define las funciones menuprincipal, ayuda, gameover, casa, persona, gato, gatomirror, cometa, arbol, proyectiles, colcuerpo, colcabeza, colcabezamirror, colpers, bloqueosConCometa aquí
 function menuprincipal() {
@@ -310,6 +221,101 @@ function menuprincipal() {
     text("MENÚ", 200, 327);
   }
 
+  function jugar() {
+
+    //FONDO
+    background(65, 164, 240);
+    
+    // PASTO
+    fill(32, 128, 35);
+    rect(0, 200, 400, 200);
+
+    //SOL
+    fill(255, 242, 0);
+    ellipse(270, 52, 24, 24);
+
+    //NUBES
+    fill(255, 255, 255);
+    ellipse(posXnube1, 66, 72, 24);
+    ellipse(posXnube2, 107, 72, 24);
+    
+    posXnube1 -= veloc1;
+    posXnube2 += veloc2;
+    
+    if (posXnube1 < -38 || posXnube1 > 438) {
+      veloc1 = -veloc1;
+    }
+    
+    if (posXnube2 > 438 || posXnube2 < -38) {
+      veloc2 = -veloc2;
+    }
+    
+    //MOVIMIENTO
+    if (keyIsPressed) {
+      if (key === 'd' || key === 'D') {
+        posXpers += 2;
+        if (posXpers + 20 >= 390) {
+          posXpers = 370;
+        }
+      }
+      
+      if (key === 'a' || key === 'A') {
+        posXpers -= 2;
+        if (posXpers - 20 <= 5) {
+          posXpers = 25;
+        }
+      }
+    }
+    casa();
+    arbol();
+    proyectiles();
+    cometa();
+    persona();
+    colpers();
+    
+    //CONTADOR DE PUNTOS
+    fill(0, 0, 0);
+    text(conteo, 18, 8);
+    fill(255, 255, 255);
+    text(conteo, 18, 10);
+
+    //BLOQUEO CON COMETA
+    bloqueosConCometa();
+
+    //MOVIMIENTO DE KAT
+    posXKat += KatSpeed1;
+    
+    if (posXKat + 23 > 390) {
+      KatSpeed1 = Math.random() * -2 - 1;
+    }
+    
+    if (posXKat - 45 < 10) {
+      KatSpeed1 = Math.random() * 2 + 1;
+    }
+
+    if (KatSpeed1 < 0) {
+      gato();
+    } else {
+      gatomirror();
+    }
+    
+    //COLISIONES
+    colcuerpo();
+    
+    if (KatSpeed1 > 0) {
+      colcabezamirror();
+    } else {
+      colcabeza();
+    }
+
+    persona();
+
+    if (KatSpeed1 === 0) {
+      gover = 1;
+    }
+  }
+}
+  }
 
   function gameover() {
     pY = -100;
