@@ -72,7 +72,9 @@ function draw() {
   if (gover === 1) {
     gameover();
     
-    boom.play();
+    if (boom && !boom.isPlaying()) {
+      boom.play();
+    }
     
     if (musica && musica.isPlaying()) {
       musica.stop();
