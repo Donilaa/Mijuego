@@ -354,73 +354,61 @@ function menuprincipal() {
   }
   
   function gameover() {
-    pY = -100;
-    pY2 = -100;
-    pY3 = -100;
-    pY4 = -100;
-    pY5 = -100;
-    pY6 = -100;
-    pY7 = -100;
-    pY8 = -100;
-    pY9 = -100;
-    pY10 = -100;
+  pY = -100;
+  pY2 = -100;
+  pY3 = -100;
+  pY4 = -100;
+  pY5 = -100;
+  pY6 = -100;
+  pY7 = -100;
+  pY8 = -100;
+  pY9 = -100;
+  pY10 = -100;
 
-    
-    
-    background(97, 130, 158);
-    textSize(25);
-    fill(0, 0, 0);
-    text("GAME OVER", 200, 132);
-    text(conteo, 200, 169);
-    fill(255, 255, 255);
-    text("GAME OVER", 200, 134);
-    fill(255, 255, 255);
+  background(97, 130, 158);
+  textSize(25);
+  fill(0, 0, 0);
+  text("GAME OVER", 200, 132);
+  text(conteo, 200, 169);
+  fill(255, 255, 255);
+  text("GAME OVER", 200, 134);
+  fill(255, 255, 255);
+  rect(150, 221, 100, 30, 5);
+  text(conteo, 200, 171);
+
+  // Botón JUGAR
+  if (mouseX > 149 && mouseX < 249 && mouseY > 221 && mouseY < 251) {
+    fill(219, 219, 219);
     rect(150, 221, 100, 30, 5);
-    text(conteo, 200, 171);
-
-    
-    if (mouseX > 149 && mouseX < 264 && mouseY > 221 && mouseY < 251) {
-      fill(219, 219, 219);
-      rect(150, 221, 100, 30, 5);
-      
-        if (mouseIsPressed) {
-        reset();
-        gover = 0;
-        conteo = 0;
-        jugar = 1;
-        musica.rate(1.0); // Restablece la velocidad de la música 
-      
-      };
-        
-
-        
-      }
+    if (mouseIsPressed) {
+      reset();
+      gover = 0;
+      conteo = 0;
+      jugar = 1;
+      musica.rate(1.0); // Restablece la velocidad de la música
     }
-    
-    fill(0, 0, 0);
-    textSize(15);
-    text("JUGAR", 126, 227, 150, 90);
-    textAlign(CENTER, TOP);
-    
-    fill(255, 255, 255);
+  }
+  fill(0, 0, 0);
+  textSize(15);
+  textAlign(CENTER, CENTER);
+  text("JUGAR", 200, 236);
+
+  // Botón MENÚ
+  fill(255, 255, 255);
+  rect(150, 270, 100, 30, 5);
+  if (mouseX > 149 && mouseX < 249 && mouseY > 270 && mouseY < 300) {
+    fill(219, 219, 219);
     rect(150, 270, 100, 30, 5);
-    
-    if (mouseX > 149 && mouseX < 264 && mouseY > 270 && mouseY < 300) {
-      fill(219, 219, 219);
-      rect(150, 270, 100, 30, 5);
-      
-      if (mouseIsPressed) {
-        gover = 0
-        menu = 1
-        conteo = 0
-        musica.rate(1.0); // Restablece la velocidad de la música 
-      }
-  
-      };
-    
-    fill(0, 0, 0);
-    text("MENÚ", 126, 276, 150, 90);
-    textAlign(CENTER, TOP);
+    if (mouseIsPressed) {
+      gover = 0;
+      menu = 1;
+      conteo = 0;
+      musica.rate(1.0); // Restablece la velocidad de la música
+    }
+  }
+  fill(0, 0, 0);
+  text("MENÚ", 200, 285);
+}
     
   
   function casa() {
