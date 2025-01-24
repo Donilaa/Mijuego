@@ -358,9 +358,7 @@ function menuprincipal() {
     rect(150, 221, 100, 30, 5);
     text(conteo, 200, 171);
 
-    if (musica && musica.isPlaying()) {
-    musica.stop();
-     }
+    
     
     if (mouseX > 149 && mouseX < 264 && mouseY > 221 && mouseY < 251) {
       fill(219, 219, 219);
