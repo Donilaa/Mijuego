@@ -67,7 +67,8 @@ function draw() {
     ayuda();
   }
   
-  if (gover === 1) {
+  if (gover === 1 && musica.isPlaying()) {
+    musica.stop();
     gameover();
   }
   
@@ -76,6 +77,7 @@ function draw() {
   }
 
   if (jugar === 1) {
+    musica.loop();
     juego()
   }
 }
