@@ -390,9 +390,7 @@ function menuprincipal() {
         jugar = 1;
         musica.rate(1.0);
 
-        if (jugar === 1 && musica && !musica.isPlaying()) {
-          musica.loop();
-        }
+        
       }
     }
     
