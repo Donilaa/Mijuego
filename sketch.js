@@ -46,12 +46,12 @@ let gover = 0;
 let leader = 0;
 let musica;
 let dot;
-let boom3;
+let boom;
 
 function preload(){
   musica = loadSound('music.wav');
   dot = loadSound('dot.wav');
-  boom3 = loadSound('boom3.wav');
+  boom = loadSound('boom3.wav');
 }
 
 function setup() {
@@ -72,8 +72,12 @@ function draw() {
   if (gover === 1) {
     gameover();
     
+    boom.play();
+    
     if (musica && musica.isPlaying()) {
       musica.stop();
+
+      
     }
   }
   
@@ -331,14 +335,11 @@ function menuprincipal() {
     }
 
     persona();
-
-    if (KatSpeed1 === 0) {
-      gover = 1;
-    }
+    
   }
   
   function gameover() {
-    boom3.play();
+    
     pY = -100;
     pY2 = -100;
     pY3 = -100;
@@ -349,6 +350,8 @@ function menuprincipal() {
     pY8 = -100;
     pY9 = -100;
     pY10 = -100;
+
+    
     
     background(97, 130, 158);
     textSize(25);
