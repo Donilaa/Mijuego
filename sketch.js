@@ -48,7 +48,7 @@ let musica;
 
 
 function preload() {
-  musica = loadSound('music.wav');
+  musica = loadSound('music.mp3');
 }
 
 function setup() {
