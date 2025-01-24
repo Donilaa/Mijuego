@@ -719,7 +719,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -732,7 +732,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -745,7 +745,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -758,7 +758,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -771,7 +771,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -784,7 +784,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -797,7 +797,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -810,7 +810,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -823,7 +823,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
@@ -836,7 +836,7 @@ function reset(){
     dot.play();
 
     if (conteo % 25 === 0 && conteo !== ultimoConteo && conteo <= 125) {
-      musica.rate(musica.rate() + 0.05);
+      musica.rate(musica.rate() + 0.025);
       ultimoConteo = conteo;
     }
   }
