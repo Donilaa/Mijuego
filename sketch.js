@@ -672,6 +672,7 @@ function menuprincipal() {
       pX = random (10,390);
       Pspeed = random (1,5);
       conteo = conteo + 1;
+      dot.play();
       }
   
   if (pY2 > (mouseY - 17) && pY2 < (mouseY + 24) && pX2 > mouseX - 20 && pX2 < mouseX         + 18) {
