@@ -354,7 +354,6 @@ function menuprincipal() {
   }
   
   function gameover() {
-    musica.rate(1.0);
     pY = -100;
     pY2 = -100;
     pY3 = -100;
@@ -389,6 +388,7 @@ function menuprincipal() {
         gover = 0;
         conteo = 0;
         jugar = 1;
+        musica.rate(1.0);
 
         if (jugar === 1 && musica && !musica.isPlaying()) {
           musica.loop();
@@ -412,6 +412,7 @@ function menuprincipal() {
         gover = 0
         menu = 1
         conteo = 0
+        musica.rate(1.0);
       }
     }
     fill(0, 0, 0);
