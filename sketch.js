@@ -110,6 +110,7 @@ function menuprincipal() {
     if (mouseX >= 150 && mouseX <= 250 && mouseY >= 290 && mouseY <= 320) {
       fill(219, 219, 219);
       rect(150, 290, 100, 30, 5);
+      
       if (mouseIsPressed) {
         ayuda1 = 1;
         menu = 0;
@@ -374,7 +375,7 @@ function menuprincipal() {
       if (mouseIsPressed) {
         gover = 0
         menu = 1
-        
+        conteo = 0
       }
     }
     fill(0, 0, 0);
