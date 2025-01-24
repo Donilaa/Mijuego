@@ -237,6 +237,11 @@ function menuprincipal() {
   }
 
   function juego() {
+
+    if (musica && !musica.isPlaying()) {
+      musica.loop();
+    }
+    
     //FONDO
     background(65, 164, 240);
     
@@ -331,9 +336,6 @@ function menuprincipal() {
   
   function gameover() {
     
-     if (musica.isPlaying()) {
-    musica.stop();
-     }
     pY = -100;
     pY2 = -100;
     pY3 = -100;
@@ -355,6 +357,10 @@ function menuprincipal() {
     fill(255, 255, 255);
     rect(150, 221, 100, 30, 5);
     text(conteo, 200, 171);
+
+    if (musica && musica.isPlaying()) {
+    musica.stop();
+     }
     
     if (mouseX > 149 && mouseX < 264 && mouseY > 221 && mouseY < 251) {
       fill(219, 219, 219);
@@ -364,7 +370,6 @@ function menuprincipal() {
         gover = 0;
         conteo = 0;
         jugar = 1;
-        musica.loop();
       }
     }
     
