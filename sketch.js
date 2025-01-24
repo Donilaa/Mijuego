@@ -47,6 +47,7 @@ let leader = 0;
 let musica;
 let dot;
 let boom;
+let boomPlayed = false;
 
 function preload(){
   musica = loadSound('music.wav');
@@ -72,9 +73,10 @@ function draw() {
   if (gover === 1) {
     gameover();
     
-    if (boom && !boom.isPlaying()) {
+    if (boom && !boomPlayed()) {
       boom.setLoop(false);
       boom.play();
+      bomPlayed = true;
     }
     
     if (musica && musica.isPlaying()) {
