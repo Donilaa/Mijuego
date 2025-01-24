@@ -354,7 +354,7 @@ function menuprincipal() {
   }
   
   function gameover() {
-    
+    musica.rate(1.0);
     pY = -100;
     pY2 = -100;
     pY3 = -100;
@@ -722,7 +722,7 @@ function reset(){
 
       // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
   }
@@ -736,7 +736,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -750,7 +750,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -764,7 +764,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -778,7 +778,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -792,7 +792,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -806,7 +806,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -820,7 +820,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -834,7 +834,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
@@ -848,7 +848,7 @@ function reset(){
 
      // Aumenta la velocidad de la música cada 25 puntos
     if (conteo % 25 === 0 && conteo !== ultimoConteo) {
-      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      musica.rate(musica.rate() + 0.05); // Incrementa la velocidad
       ultimoConteo = conteo; // Actualiza el último conteo
     }
       }
