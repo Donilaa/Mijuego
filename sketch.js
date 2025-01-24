@@ -66,7 +66,7 @@ function draw() {
   }
 
   if (jugar === 1) {
-    jugar();
+    juego();
     
   } 
 
@@ -221,7 +221,7 @@ function menuprincipal() {
     text("MENÚ", 200, 327);
   }
 
-  function jugar() {
+  function juego() {
 
     //FONDO
     background(65, 164, 240);
