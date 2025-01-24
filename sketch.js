@@ -383,16 +383,14 @@ function menuprincipal() {
       fill(219, 219, 219);
       rect(150, 221, 100, 30, 5);
       
-      if (mouseIsPressed) {
+        if (mouseIsPressed) {
         reset();
         gover = 0;
         conteo = 0;
         jugar = 1;
-        musica = loadSound('music.wav', () => {
-        musica.rate(1.0); // Restablece la velocidad de la música
-        musica.setVolume(0.2);
-        }
-      });
+        musica.rate(1.0); // Restablece la velocidad de la música 
+      
+      };
         
 
         
@@ -415,17 +413,16 @@ function menuprincipal() {
         gover = 0
         menu = 1
         conteo = 0
-        musica = loadSound('music.wav', () => {
         musica.rate(1.0); // Restablece la velocidad de la música
-        musica.setVolume(0.2);
-        }
-      });
+        
       }
-    }
     fill(0, 0, 0);
     text("MENÚ", 126, 276, 150, 90);
     textAlign(CENTER, TOP);
-  }
+  
+      };
+
+    
   
   function casa() {
     fill(214, 156, 11);
