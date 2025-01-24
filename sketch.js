@@ -107,7 +107,6 @@ function menuprincipal() {
         jugar = 1;
         ayuda1 = 0;
         leader = 0;
-        
   
       }
     }
@@ -240,7 +239,7 @@ function menuprincipal() {
 
   function juego() {
 
-    if (musica && !musica.isPlaying()) {
+    if (jugar === 1 && musica && !musica.isPlaying()) {
       musica.loop();
     }
     
@@ -371,7 +370,7 @@ function menuprincipal() {
         conteo = 0;
         jugar = 1;
 
-        if (musical) {
+        if (musica && !musica.isPlaying()) {
           musica.loop();
         }
       }
