@@ -45,9 +45,11 @@ let jugar = 0;
 let gover = 0;
 let leader = 0;
 let musica;
+let dot;
 
 function preload(){
   musica = loadSound('music.wav');
+  dot = loadSound('dot.wav');
 }
 
 function setup() {
