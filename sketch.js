@@ -52,6 +52,7 @@ function preload(){
 
 function setup() {
   createCanvas(400, 400);
+  musica.setVolume(0.5);
 }
 
 function draw() {
