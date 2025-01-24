@@ -370,7 +370,7 @@ function menuprincipal() {
         conteo = 0;
         jugar = 1;
 
-        if (musica && !musica.isPlaying()) {
+        if (jugar === 1 && musica && !musica.isPlaying()) {
           musica.loop();
         }
       }
