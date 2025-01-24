@@ -46,7 +46,9 @@ let gover = 0;
 let leader = 0;
 let musica;
 
-
+function preload(){
+  musica = loadSound('music.mp3');
+}
 function setup() {
   createCanvas(400, 400);
 }
@@ -97,7 +99,7 @@ function menuprincipal() {
         jugar = 1;
         ayuda1 = 0;
         leader = 0;
-        musica = loadSound('music.mp3');
+        
         
         if (musica && !musica.isPlaying()) {  
           musica.loop();
