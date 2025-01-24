@@ -77,7 +77,9 @@ function draw() {
   }
 
   if (jugar === 1) {
-    musica.loop();
+    if (musica && !musica.isPlaying()) {
+      musica.loop();
+    }
     juego()
   }
 }
@@ -107,9 +109,6 @@ function menuprincipal() {
         leader = 0;
         
         
-        if (musica && !musica.isPlaying()) {  
-          musica.loop();
-        }
       }
     }
   
