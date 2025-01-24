@@ -77,9 +77,10 @@ function draw() {
     
     if (boom && boomPlayed === 0) {
       boom.setLoop(false);
-      boom.play();
-      boomPlayed = 1;
+      boom.play(); 
     }
+
+    boomPlayed = 1;
     
     if (musica && musica.isPlaying()) {
       musica.stop();
