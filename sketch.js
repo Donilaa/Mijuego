@@ -497,112 +497,114 @@ function menuprincipal() {
     fill(30, 143, 34);
     ellipse(336, 198, 60, 175);
   }
+
   function proyectiles() {
-    fill(255, 255, 0);
-  
-    // Proyectil 1
-    ellipse(pX, pY, 10, 10);
-    pY += Pspeed;
-    if (pY >= 400) {
-      pY = -10;
-      pX = Math.random() * 380 + 10;
-      Pspeed = Math.random() * 4 + 1;
-    }
-  
-    // Proyectil 2
-    ellipse(pX2, pY2, 10, 10);
-    pY2 += Pspeed2;
-    if (pY2 >= 400) {
-      pY2 = -10;
-      pX2 = Math.random() * 380 + 10;
-      Pspeed2 = Math.random() * 4 + 1;
-    }
-  
-    // Proyectil 3
-    ellipse(pX3, pY3, 10, 10);
-    pY3 += Pspeed3;
-    if (pY3 >= 400) {
-      pY3 = -10;
-      pX3 = Math.random() * 380 + 10;
-      Pspeed3 = Math.random() * 4 + 1;
-    }
-  
-    // Proyectil 4
-    ellipse(pX4, pY4, 10, 10);
-    pY4 += Pspeed4;
-    if (pY4 >= 400) {
-      pY4 = -10;
-      pX4 = Math.random() * 380 + 10;
-      Pspeed4 = Math.random() * 4 + 1;
-    }
-  
-    // Proyectil 5
-    ellipse(pX5, pY5, 10, 10);
-    pY5 += Pspeed5;
-    if (pY5 >= 400) {
-      pY5 = -10;
-      pX5 = Math.random() * 380 + 10;
-      Pspeed5 = Math.random() * 4 + 1;
-    }
-  
-    // Proyectiles adicionales según el conteo
-    
-    if (conteo >= 25) {
-      fill(255, 204, 0);
-      ellipse(pX6, pY6, 10, 10);
-      pY6 += Pspeed6;
-      if (pY6 >= 400) {
-        pY6 = -10;
-        pX6 = Math.random() * 380 + 10;
-        Pspeed6 = Math.random() * 4 + 1;
-      }
-    }
-  
-    if (conteo >= 50) {
-      fill(255, 153, 0);
-      ellipse(pX7, pY7, 10, 10);
-      pY7 += Pspeed7;
-      if (pY7 >= 400) {
-        pY7 = -10;
-        pX7 = Math.random() * 380 + 10;
-        Pspeed7 = Math.random() * 4 + 1;
-      }
-    }
-  
-    if (conteo >= 75) {
-      fill(255, 102, 0);
-      ellipse(pX8, pY8, 10, 10);
-      pY8 += Pspeed8;
-      if (pY8 >= 400) {
-        pY8 = -10;
-        pX8 = Math.random() * 380 + 10;
-        Pspeed8 = Math.random() * 4 + 1;
-      }
-    }
-  
-    if (conteo >= 100) {
-      fill(255, 51, 0);
-      ellipse(pX9, pY9, 10, 10);
-      pY9 += Pspeed9;
-      if (pY9 >= 400) {
-        pY9 = -10;
-        pX9 = Math.random() * 380 + 10;
-        Pspeed9 = Math.random() * 4 + 1;
-      }
-    }
-  
-    if (conteo >= 125) {
-      fill(255, 0, 0);
-      ellipse(pX10, pY10, 10, 10);
-      pY10 += Pspeed10;
-      if (pY10 >= 400) {
-        pY10 = -10;
-        pX10 = Math.random() * 380 + 10;
-        Pspeed10 = Math.random() * 4 + 1;
-      }
+  // Proyectil 1
+  fill(255, 255, 0); // Amarillo
+  ellipse(pX, pY, 10, 10);
+  pY += Pspeed;
+  if (pY >= 400) {
+    pY = -10;
+    pX = Math.random() * 380 + 10;
+    Pspeed = Math.random() * 4 + 1;
+  }
+
+  // Proyectil 2
+  fill(255, 255, 0); // Amarillo
+  ellipse(pX2, pY2, 10, 10);
+  pY2 += Pspeed2;
+  if (pY2 >= 400) {
+    pY2 = -10;
+    pX2 = Math.random() * 380 + 10;
+    Pspeed2 = Math.random() * 4 + 1;
+  }
+
+  // Proyectil 3
+  fill(255, 255, 0); // Amarillo
+  ellipse(pX3, pY3, 10, 10);
+  pY3 += Pspeed3;
+  if (pY3 >= 400) {
+    pY3 = -10;
+    pX3 = Math.random() * 380 + 10;
+    Pspeed3 = Math.random() * 4 + 1;
+  }
+
+  // Proyectil 4
+  fill(255, 255, 0); // Amarillo
+  ellipse(pX4, pY4, 10, 10);
+  pY4 += Pspeed4;
+  if (pY4 >= 400) {
+    pY4 = -10;
+    pX4 = Math.random() * 380 + 10;
+    Pspeed4 = Math.random() * 4 + 1;
+  }
+
+  // Proyectil 5
+  fill(255, 255, 0); // Amarillo
+  ellipse(pX5, pY5, 10, 10);
+  pY5 += Pspeed5;
+  if (pY5 >= 400) {
+    pY5 = -10;
+    pX5 = Math.random() * 380 + 10;
+    Pspeed5 = Math.random() * 4 + 1;
+  }
+
+  // Proyectiles adicionales según el conteo
+  if (conteo >= 25) {
+    fill(255, 204, 0); // Naranja claro
+    ellipse(pX6, pY6, 10, 10);
+    pY6 += Pspeed6;
+    if (pY6 >= 400) {
+      pY6 = -10;
+      pX6 = Math.random() * 380 + 10;
+      Pspeed6 = Math.random() * 4 + 1;
     }
   }
 
+  if (conteo >= 50) {
+    fill(255, 153, 0); // Naranja
+    ellipse(pX7, pY7, 10, 10);
+    pY7 += Pspeed7;
+    if (pY7 >= 400) {
+      pY7 = -10;
+      pX7 = Math.random() * 380 + 10;
+      Pspeed7 = Math.random() * 4 + 1;
+    }
+  }
+
+  if (conteo >= 75) {
+    fill(255, 102, 0); // Naranja oscuro
+    ellipse(pX8, pY8, 10, 10);
+    pY8 += Pspeed8;
+    if (pY8 >= 400) {
+      pY8 = -10;
+      pX8 = Math.random() * 380 + 10;
+      Pspeed8 = Math.random() * 4 + 1;
+    }
+  }
+
+  if (conteo >= 100) {
+    fill(255, 51, 0); // Rojo claro
+    ellipse(pX9, pY9, 10, 10);
+    pY9 += Pspeed9;
+    if (pY9 >= 400) {
+      pY9 = -10;
+      pX9 = Math.random() * 380 + 10;
+      Pspeed9 = Math.random() * 4 + 1;
+    }
+  }
+
+  if (conteo >= 125) {
+    fill(255, 0, 0); // Rojo
+    ellipse(pX10, pY10, 10, 10);
+    pY10 += Pspeed10;
+    if (pY10 >= 400) {
+      pY10 = -10;
+      pX10 = Math.random() * 380 + 10;
+      Pspeed10 = Math.random() * 4 + 1;
+    }
+  }
+}
 function reset(){
   posXnube1 = 263;
     posXnube2 = 74;
