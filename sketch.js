@@ -391,8 +391,6 @@ function menuprincipal() {
         musica = loadSound('music.wav', () => {
         musica.rate(1.0); // Restablece la velocidad de la música
         musica.setVolume(0.2);
-        if (musica && !musica.isPlaying) {
-          musica.loop();
         }
       });
         
@@ -420,8 +418,6 @@ function menuprincipal() {
         musica = loadSound('music.wav', () => {
         musica.rate(1.0); // Restablece la velocidad de la música
         musica.setVolume(0.2);
-        if (musica && !musica.isPlaying) {
-          musica.loop();
         }
       });
       }
