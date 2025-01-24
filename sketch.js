@@ -47,7 +47,7 @@ let leader = 0;
 let musica;
 let dot;
 let boom;
-let boomPlayed = false;
+let boomPlayed = 0;
 
 function preload(){
   musica = loadSound('music.wav');
@@ -64,19 +64,21 @@ function draw() {
   
   if (menu === 1) {
     menuprincipal();
+    boomPlayed = 0;
   }
   
   if (ayuda1 === 1) {
     ayuda();
+    boomPlayed = 0;
   }
   
   if (gover === 1) {
     gameover();
     
-    if (boom && !boomPlayed()) {
+    if (boom && boomPlayed === 0) {
       boom.setLoop(false);
       boom.play();
-      bomPlayed = true;
+      boomPlayed = 1;
     }
     
     if (musica && musica.isPlaying()) {
@@ -88,10 +90,12 @@ function draw() {
   
   if (leader === 1) {
     leaderboard();
+    boomPlayed = 0;
   }
 
   if (jugar === 1) {
     juego()
+    boomPlayed = 0;
   }
 }
 
