@@ -48,7 +48,7 @@ let musica;
 let dot;
 let boom;
 let boomPlayed = 0;
-let musicvel = 1.0;
+let ultimoConteo = 0;
 
 function preload(){
   musica = loadSound('music.wav');
@@ -60,6 +60,7 @@ function setup() {
   createCanvas(400, 400);
   musica.setVolume(0.2);
   dot.setVolume(0.3);
+  musica.rate(1.0);
 }
 
 function draw() {
@@ -261,11 +262,7 @@ function menuprincipal() {
       musica.loop();
     }
 
-    // Aumenta la velocidad de la música cada 25 puntos
-    if (conteo % 25 === 0) {
-      musicvel += 0.1; // Incrementa la velocidad
-      musica.rate(musicvel); // Ajusta la velocidad de reproducción
-    }
+
     
     //FONDO
     background(65, 164, 240);
@@ -722,7 +719,13 @@ function reset(){
       Pspeed = random (1,5);
       conteo = conteo + 1;
       dot.play();
-      }
+
+      // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
+  }
   
   if (pY2 > (mouseY - 17) && pY2 < (mouseY + 24) && pX2 > mouseX - 20 && pX2 < mouseX         + 18) {
       pY2 = -10 + Pspeed2;
@@ -730,6 +733,12 @@ function reset(){
       Pspeed2 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY3 > (mouseY - 17) && pY3 < (mouseY + 24) && pX3 > mouseX - 20 && pX3 < mouseX         + 18) {
@@ -738,6 +747,12 @@ function reset(){
       Pspeed3 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY4 > (mouseY - 17) && pY4 < (mouseY + 24) && pX4 > mouseX - 20 && pX4 < mouseX         + 18) {
@@ -746,6 +761,12 @@ function reset(){
       Pspeed4 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY5 > (mouseY - 17) && pY5 < (mouseY + 24) && pX5 > mouseX - 20 && pX5 < mouseX         + 18) {
@@ -754,6 +775,12 @@ function reset(){
       Pspeed5 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY6 > (mouseY - 17) && pY6 < (mouseY + 24) && pX6 > mouseX - 20 && pX6 < mouseX         + 18) {
@@ -762,6 +789,12 @@ function reset(){
       Pspeed6 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY7 > (mouseY - 17) && pY7 < (mouseY + 24) && pX7 > mouseX - 20 && pX7 < mouseX         + 18) {
@@ -770,6 +803,12 @@ function reset(){
       Pspeed7 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY8 > (mouseY - 17) && pY8 < (mouseY + 24) && pX8 > mouseX - 20 && pX8 < mouseX         + 18) {
@@ -778,6 +817,12 @@ function reset(){
       Pspeed8 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
   
   if (pY9 > (mouseY - 17) && pY9 < (mouseY + 24) && pX9 > mouseX - 20 && pX9 < mouseX         + 18) {
@@ -786,6 +831,12 @@ function reset(){
       Pspeed9 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
 
   if (pY10 > (mouseY - 17) && pY10 < (mouseY + 24) && pX10 > mouseX - 20 && pX10 < mouseX         + 18) {
@@ -794,5 +845,11 @@ function reset(){
       Pspeed10 = random (1,5);
       conteo = conteo + 1;
       dot.play();
+
+     // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0 && conteo !== ultimoConteo) {
+      musica.rate(musica.rate() + 0.1); // Incrementa la velocidad
+      ultimoConteo = conteo; // Actualiza el último conteo
+    }
       }
     }
