@@ -48,6 +48,7 @@ let musica;
 let dot;
 let boom;
 let boomPlayed = 0;
+let musicvel = 1.0;
 
 function preload(){
   musica = loadSound('music.wav');
@@ -707,6 +708,14 @@ function reset(){
   }
   
   function bloqueosConCometa() {
+
+    // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0) {
+      musicvel += 0.1; // Incrementa la velocidad
+      musica.rate(velocidadMusica); // Ajusta la velocidad de reproducción
+    }
+
+    
     if (pY > (mouseY - 17) && pY < (mouseY + 24) && pX > mouseX - 20 && pX < mouseX + 18        ) {
       pY = -10 + Pspeed;
       pX = random (10,390);
