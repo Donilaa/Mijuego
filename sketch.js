@@ -413,15 +413,14 @@ function menuprincipal() {
         gover = 0
         menu = 1
         conteo = 0
-        musica.rate(1.0); // Restablece la velocidad de la música
-        
+        musica.rate(1.0); // Restablece la velocidad de la música 
       }
+  
+      };
+    
     fill(0, 0, 0);
     text("MENÚ", 126, 276, 150, 90);
     textAlign(CENTER, TOP);
-  
-      };
-
     
   
   function casa() {
