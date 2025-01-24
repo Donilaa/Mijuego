@@ -390,7 +390,7 @@ function menuprincipal() {
         jugar = 1;
         musica = loadSound('music.wav', () => {
         musica.rate(1.0); // Restablece la velocidad de la música
-        musica.setVolime(0.2);
+        musica.setVolume(0.2);
         if (musica && !musica.isPlaying) {
           musica.loop();
         }
@@ -419,7 +419,7 @@ function menuprincipal() {
         conteo = 0
         musica = loadSound('music.wav', () => {
         musica.rate(1.0); // Restablece la velocidad de la música
-        musica.setVolime(0.2);
+        musica.setVolume(0.2);
         if (musica && !musica.isPlaying) {
           musica.loop();
         }
