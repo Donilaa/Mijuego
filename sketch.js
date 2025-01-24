@@ -365,6 +365,7 @@ function menuprincipal() {
       rect(150, 221, 100, 30, 5);
       
       if (mouseIsPressed) {
+        reset();
         gover = 0;
         conteo = 0;
         jugar = 1;
@@ -579,6 +580,18 @@ function menuprincipal() {
       }
     }
   }
+
+function reset(){
+  posXnube1 = 263;
+    posXnube2 = 74;
+    conteo = 0;
+    posXKat = Math.random() * 380 + 10;
+    posYKat = 200;
+    posXpers = 91;
+    posYpers = 263;
+    KatSpeed1 = Math.random() * 2 + 1;
+    // Reinicia proyectiles, nube, etc.
+}
 
   function colcuerpo() {
     if (pY >= 332 && pY <= 350 && pX >= (posXKat - 8) - 28 && pX < (posXKat - 8) + 28) {
