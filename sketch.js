@@ -547,7 +547,7 @@ function menuprincipal() {
   
     // Proyectiles adicionales según el conteo
     
-    if (conteo >= 25 && conteo < 50) {
+    if (conteo >= 25) {
       fill(255, 204, 0);
       ellipse(pX6, pY6, 10, 10);
       pY6 += Pspeed6;
@@ -558,7 +558,7 @@ function menuprincipal() {
       }
     }
   
-    if (conteo >= 50 && conteo < 75) {
+    if (conteo >= 50) {
       fill(255, 153, 0);
       ellipse(pX7, pY7, 10, 10);
       pY7 += Pspeed7;
@@ -569,7 +569,7 @@ function menuprincipal() {
       }
     }
   
-    if (conteo >= 75 && conteo < 100) {
+    if (conteo >= 75) {
       fill(255, 102, 0);
       ellipse(pX8, pY8, 10, 10);
       pY8 += Pspeed8;
@@ -580,7 +580,7 @@ function menuprincipal() {
       }
     }
   
-    if (conteo >= 100 && conteo < 125) {
+    if (conteo >= 100) {
       fill(255, 51, 0);
       ellipse(pX9, pY9, 10, 10);
       pY9 += Pspeed9;
