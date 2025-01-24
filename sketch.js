@@ -46,10 +46,12 @@ let gover = 0;
 let leader = 0;
 let musica;
 let dot;
+let boom3;
 
 function preload(){
   musica = loadSound('music.wav');
   dot = loadSound('dot.wav');
+  boom3 = loadSound('boom3.wav');
 }
 
 function setup() {
@@ -336,7 +338,7 @@ function menuprincipal() {
   }
   
   function gameover() {
-    
+    boom3.play();
     pY = -100;
     pY2 = -100;
     pY3 = -100;
