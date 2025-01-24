@@ -74,6 +74,7 @@ function draw() {
     
     if (boom && !boom.isPlaying()) {
       boom.play();
+      boom.stop(1);
     }
     
     if (musica && musica.isPlaying()) {
