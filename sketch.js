@@ -47,8 +47,9 @@ let leader = 0;
 let musica;
 
 function preload(){
-  musica = loadSound('music.mp3');
+  musica = loadSound('music.wav');
 }
+
 function setup() {
   createCanvas(400, 400);
 }
