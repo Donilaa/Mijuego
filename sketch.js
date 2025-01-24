@@ -104,9 +104,7 @@ function menuprincipal() {
         ayuda1 = 0;
         leader = 0;
         
-        if (musica && !musica.isPlaying()) {
-      musica.loop();
-    }
+  
       }
     }
   
