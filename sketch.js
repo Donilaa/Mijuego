@@ -80,6 +80,7 @@ function draw() {
     if (musica && !musica.isPlaying()) {
       musica.loop();
     }
+    
     juego()
   }
 }
