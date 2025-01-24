@@ -330,7 +330,10 @@ function menuprincipal() {
   }
   
   function gameover() {
-    musica.setVolume(0.0);
+    
+     if (musica.isPlaying()) {
+    musica.stop();
+     }
     pY = -100;
     pY2 = -100;
     pY3 = -100;
