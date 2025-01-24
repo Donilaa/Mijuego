@@ -260,6 +260,12 @@ function menuprincipal() {
     if (jugar === 1 && musica && !musica.isPlaying()) {
       musica.loop();
     }
+
+    // Aumenta la velocidad de la música cada 25 puntos
+    if (conteo % 25 === 0) {
+      musicvel += 0.1; // Incrementa la velocidad
+      musica.rate(musicvel); // Ajusta la velocidad de reproducción
+    }
     
     //FONDO
     background(65, 164, 240);
@@ -708,12 +714,6 @@ function reset(){
   }
   
   function bloqueosConCometa() {
-
-    // Aumenta la velocidad de la música cada 25 puntos
-    if (conteo % 25 === 0) {
-      musicvel += 0.1; // Incrementa la velocidad
-      musica.rate(velocidadMusica); // Ajusta la velocidad de reproducción
-    }
 
     
     if (pY > (mouseY - 17) && pY < (mouseY + 24) && pX > mouseX - 20 && pX < mouseX + 18        ) {
