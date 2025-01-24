@@ -388,7 +388,11 @@ function menuprincipal() {
         gover = 0;
         conteo = 0;
         jugar = 1;
-        musica.rate(1.0);
+        musica = loadSound('music.wav', () => {
+        musica.rate(1.0); // Restablece la velocidad de la música
+        musica.loop();
+      });
+        
 
         
       }
@@ -410,7 +414,10 @@ function menuprincipal() {
         gover = 0
         menu = 1
         conteo = 0
-        musica.rate(1.0);
+        musica = loadSound('music.wav', () => {
+        musica.rate(1.0); // Restablece la velocidad de la música
+        musica.loop();
+      });
       }
     }
     fill(0, 0, 0);
