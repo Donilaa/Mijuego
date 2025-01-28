@@ -222,7 +222,7 @@ function menuprincipal() {
     text("MENÚ", 200, 327);
   }
 
-  function obtener puntos() {
+  function obtenerpuntos() {
     const referencia = database.ref('puntuaciones');
     referencia.on('value', (snapshot) => {
       const puntuaciones = snapshot.val();
