@@ -104,13 +104,6 @@ function draw() {
 }
 
 // Define las funciones menuprincipal, ayuda, gameover, casa, persona, gato, gatomirror, cometa, arbol, proyectiles, colcuerpo, colcabeza, colcabezamirror, colpers, bloqueosConCometa aquí
-function guardarpuntos(nombreJugador, puntuacion) {
-  const referencia = database.ref('puntuaciones') .push();
-  referencia.set( {
-    nombre: nombreJugador,
-    puntuacion: puntuación
-    });
-}
 
 function menuprincipal() {
     posXKat = 22;
@@ -220,15 +213,6 @@ function menuprincipal() {
     fill(0, 0, 0);
     textSize(15);
     text("MENÚ", 200, 327);
-  }
-
-  function obtenerpuntos() {
-    const referencia = database.ref('puntuaciones');
-    referencia.on('value', (snapshot) => {
-      const puntuaciones = snapshot.val();
-      console.log(puntuaciones);
-
-    });
   }
 
   function leaderboard() {
@@ -393,9 +377,6 @@ function menuprincipal() {
   rect(150, 221, 100, 30, 5);
   text(conteo, 200, 171);
 
-
-  guardarpuntos("Jugador1", 100);
-  obtenerpuntos();
     
   // Botón JUGAR
   if (mouseX > 149 && mouseX < 249 && mouseY > 221 && mouseY < 251) {
