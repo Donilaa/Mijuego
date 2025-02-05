@@ -49,6 +49,8 @@ let dot;
 let boom;
 let boomPlayed = 0;
 let ultimoConteo = 0;
+let movingLeft = false;
+let movingRight = false;
 
 function preload(){
   musica = loadSound('music.wav');
@@ -293,21 +295,41 @@ function menuprincipal() {
     }
     
     //MOVIMIENTO
-    if (keyIsPressed) {
+
+    function keyPressed() {
       if (key === 'd' || key === 'D') {
-        posXpers += 2;
-        if (posXpers + 20 >= 390) {
-          posXpers = 370;
-        }
+        movingRight = true;
       }
       
       if (key === 'a' || key === 'A') {
-        posXpers -= 2;
-        if (posXpers - 20 <= 5) {
-          posXpers = 25;
-        }
+        movingLeft = true;
       }
-    }
+    } 
+
+    function keyReleased() {
+      if (key === 'd' || key === 'D') {
+        movingRight = false;
+      }
+      
+      if (key === 'a' || key === 'A') {
+        movingLeft = false;
+      }
+    } 
+
+    
+    if (movingRight) {
+  posXpers += 2;
+  if (posXpers + 20 >= 390) {
+    posXpers = 370;
+  }
+}
+
+if (movingLeft) {
+  posXpers -= 2;
+  if (posXpers - 20 <= 5) {
+    posXpers = 25;
+  }
+}
     casa();
     arbol();
     proyectiles();
