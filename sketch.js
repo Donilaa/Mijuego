@@ -296,7 +296,7 @@ function menuprincipal() {
     
     //MOVIMIENTO
 
-    function keyPressed() {
+    function keyIsPressed() {
       if (key === 'd' || key === 'D') {
         movingRight = true;
       }
@@ -306,7 +306,7 @@ function menuprincipal() {
       }
     } 
 
-    function keyReleased() {
+    function keyIsReleased() {
       if (key === 'd' || key === 'D') {
         movingRight = false;
       }
