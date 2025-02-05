@@ -37,7 +37,7 @@ let KatSpeed1 = Math.random() * 2 + 1;
 let conteo = 0;
 let posXKat = Math.random() * 380 + 10;
 let posYKat = 200;
-let posXpers = 91;
+let posXpers = Math.random() * 380 + 10;
 let posYpers = 263;
 let menu = 1;
 let ayuda1 = 0;
@@ -49,8 +49,6 @@ let dot;
 let boom;
 let boomPlayed = 0;
 let ultimoConteo = 0;
-let movingLeft = false;
-let movingRight = false;
 
 function preload(){
   musica = loadSound('music.wav');
@@ -296,40 +294,23 @@ function menuprincipal() {
     
     //MOVIMIENTO
 
-    function keyIsPressed() {
-      if (key === 'd' || key === 'D') {
-        movingRight = true;
+    if (keyIsPressed) {
+    if (key === 'd' || key === 'D') {
+      posXpers += 2;
+      if (posXpers + 20 >= 390) {
+        posXpers = 370;
       }
-      
-      if (key === 'a' || key === 'A') {
-        movingLeft = true;
-      }
-    } 
+    }
 
-    function keyIsReleased() {
-      if (key === 'd' || key === 'D') {
-        movingRight = false;
+    if (key === 'a' || key === 'A') {
+      posXpers -= 2;
+      if (posXpers - 20 <= 5) {
+        posXpers = 25;
       }
-      
-      if (key === 'a' || key === 'A') {
-        movingLeft = false;
-      }
-    } 
+    }
+  }
 
     
-    if (movingRight) {
-  posXpers += 2;
-  if (posXpers + 20 >= 390) {
-    posXpers = 370;
-  }
-}
-
-if (movingLeft) {
-  posXpers -= 2;
-  if (posXpers - 20 <= 5) {
-    posXpers = 25;
-  }
-}
     casa();
     arbol();
     proyectiles();
