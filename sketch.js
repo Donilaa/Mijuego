@@ -293,22 +293,21 @@ function menuprincipal() {
     }
     
     //MOVIMIENTO
-
     if (keyIsPressed) {
-    if (key === 'd' || key === 'D') {
-      posXpers += 2;
-      if (posXpers + 20 >= 390) {
-        posXpers = 370;
+      if (key === 'd' || key === 'D') {
+        posXpers += 2;
+        if (posXpers + 20 >= 390) {
+          posXpers = 370;
+        }
+      }
+      
+      if (key === 'a' || key === 'A') {
+        posXpers -= 2;
+        if (posXpers - 20 <= 5) {
+          posXpers = 25;
+        }
       }
     }
-
-    if (key === 'a' || key === 'A') {
-      posXpers -= 2;
-      if (posXpers - 20 <= 5) {
-        posXpers = 25;
-      }
-    }
-  }
 
     
     casa();
